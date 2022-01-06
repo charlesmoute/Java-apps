@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Manuel DES</title>
+<style>
+ a{
+ 	text-decoration:none;
+ }
+</style>
+</head>
+
+<body style="font-family:'Courier New', Courier, monospace; size:18px;">
+	
+	<center><a name="home"></a><div style="border-bottom:dotted medium black;">
+		<img src="UImages/logo.png" style="width:45px; height:55px;"/><h2>Data Encryption Standard </h2></div>
+	</center>
+	<br/>
+	<p>
+	  	L'interface  de DES, dont la représentation graphique est :
+		<br/><br/><center><img src="UImages/1.png" style="height:50%; width:50%;" /></center><br /><br />		
+		,est constitu&eacute; de trois grandes parties :	  	
+		</p><ul>
+			<li><a href="manuel.html#menu">Une barre de Menu.</a></li>
+			<li><a href="manuel.html#toolbar">Une barre d'outils.</a></li>
+			<li><a href="manuel.html#workspace">Une zone de travail.</a></li>
+		</ul>		
+	<b>Principe:</b> La m&eacute;thode d'utilisation est la suivante :
+		<ul>
+			<li><b><i>Pour chiffrer</i></b> : saisir la cl&eacute; dans la zone cl&eacute;(petite zone de texte ) et le texte &agrave; chiffer dans la zone de texte la plus grande. Afin de vous assurez que le message qui sera chiffr&eacute; est bien un message ascii, tapez <b><i>CTRL+R</i></b>, tous les caract&eacute;res non reconnus seront remplac&eacute;s par un point d'interrogation. Une fois assur&eacute; du message qui sera r&eacute;ellement chiffrer, tapez <b><i>CTRL+L</i></b> pour lancer le chiffrement de votre message.
+			</li>
+			<li><b><i>Pour d&eacute;chiffrer: </i></b> saisir la cl&eacute; de d&eacute;chiffrement et le texte &agrave; d&eacute;chiffrer.</li>
+		</ul>
+		<b>NB:</b> le texte &agrave; chiffrer ou &agrave; d&eacute;chiffrer peut &ecirc;tre un chaine binaire, &agrave; la place d'un texte en claire, du moment que sa taille est un multiple de 64. Nous vous conseilllons, d'ailleurs de pr&eacute;f&eacute;rer la representation binaire au representation en claire, ceci dans le but d'&eacute;viter d'&eacute;ventuelles erreures d&ucirc;es aux op&eacute;rations de copie et de collage. <br /><br />		
+	<p></p>
+	<hr />
+	
+	<center><div><h3><i><a name="menu"></a>La Barre de menu</i></h3></div></center>
+	<p>
+		Trois menu sont a distinguer :
+		</p><ul>
+			<li><a href="manuel.html#file">File</a> regroupant les actions standards d'une application.</li>
+			<li><a href="manuel.html#edition">Edition</a> regroupant les fonctionnalités que DES offre.</li>
+			<li><a href="manuel.html#help">Help</a> permettant d'avoir acc&eacute;s a un &agrave; propos et &agrave; cette  aide.</li>
+		</ul>		
+	
+		<br />
+		<p>
+			<a name="file"></a></p><h4><i>File</i><a href="manuel.html#home">&nbsp;(Home)</a></h4>
+			<img src="UImages/2.png" style="height:8%; width:8%;" /><br /><br />
+			Ce menu est constitu&eacute; des sous-menus suivant :
+			<ul>
+				<li>New <b>(CTRL-N)</b>&nbsp;: Permet de r&eacute;initialiser la zone de travail de l'application.
+				</li>
+				<li>Load <b>(CTRL-O)</b>: Charge le contenu d'un fichier dans la zone texte de la zone de Travail. 
+					<br />Ce contenu devrait &ecirc;tre du texte AScii, au risque de voir une incoh&eacute;rence entre le message r&eacute;ellement chiffr&eacute; et le message que l'on souhaite chiffrer. Utilisez le sous-menu Spelling du menu Edition, pour effectuer cette v&eacute;rification et vous assurez que le message r&eacute;ellement chiffr&eacute; et bien le message que vous avez saisi. 
+				</li>
+				<li>Exit <b>(CTRL-X)</b>: Quitte l'application.
+					
+				</li>
+			</ul>
+			
+		<p></p>
+		
+		<p>
+			<a name="edition"></a></p><h4><i>Edition</i><a href="manuel.html#home">&nbsp;(Home)</a></h4><br />
+			<img src="UImages/3.PNG" /><br /><br />
+			Ce menu est constitu&eacute; des sous-menus suivant :
+			<ul>
+				<li>Encode <b>(CTRL-L)</b>&nbsp;&nbsp;: Lance le chiffrement du texte, de la zone texte , avec la cl&eacute; de la zone cl&eacute;.
+				</li><li>Decode <b>(CTRL-U)</b>&nbsp;&nbsp;: Lance le d&eacute;chiffrement du texte avec la cl&eacute; fournie. <b><i>Le texte &agrave; d&eacute;chiffrer doit &ecirc;tre une suite binaire (suite de un et de z&eacute;ro).</i></b></li>
+			</ul>
+		<p></p>
+		
+		<p>
+			<a name="help"></a></p><h4><i>Help</i><a href="manuel.html#home">&nbsp;(Home)</a></h4><br />
+			<img src="UImages/4.PNG" /><br /><br />
+			Ce menu est constitu&eacute; des sous-menus suivant :
+			<ul>
+				<li>About <b>(CTRL-I)</b> : Donne une description br&eacute;ve sur l'application.</li>
+				<li>Manual<b>(CTRL-M)</b>&nbsp;: Donne acc&eacute;s &agrave; cette fen&ecirc;tre d'aide.</li>
+			</ul>
+		<p></p>
+				
+	<p></p>
+	<hr />
+	
+	<center><div><h3><i><a name="toolbar"></a>La Barre d'outils</i><a href="manuel.html#home">&nbsp;(Home)</a></h3></div></center>
+	<p>
+		La barre d'outils est contitu&eacute;e des boutons suivants :
+		</p><ul>
+			<li><img src="UImages/crypte.png" /> permet de lancer l'op&eacute;ration de chiffrement</li>
+			<li><img src="UImages/decrypte.png" /> permet de lancer l'op&eacute;ration de d&eacute;chiffrement</li>
+			<li><img src="UImages/help.png" />  permet d'ouvrir/fermer la fen&ecirc;tre du manuel d'aide.</li>
+			<li><img src="UImages/exit.png" /> permet de fermer l'application.</li>
+		</ul>
+		
+		Les boutons <img src="UImages/crypte.png" /> et <img src="UImages/decrypte.png" /> ouvrent tous les deux une fen&ecirc;tre pr&eacute;sentant le r&eacute;sultat de l'op&eacute;ration effectu&eacute;e. Cette fen&ecirc;tre poss&eacute;de deux boutons permettant l'affichage d'un r&eacute;sultat en suite binaires ou en texte Ascii, et une zone de texte o&ugrave; figure le r&eacute;sultat des diff&eacute;rentes op&eacute;rations. La zone de texte poss&eacute;de un menu contextuel, accessible d'un click droit sur cette derni&eacute;re. Ce menu contextuel permet entre autre :
+		<ul>
+			<li>De s&eacute;lectionner tout le texte r&eacute;sultat.</li>
+			<li><img src="UImages/delete.png" /> De supprimer tout le texte.</li>
+			<li><img src="UImages/copy.png" /> De copier le texte s&eacute;lectionner.</li>
+			<li><img src="UImages/paste.png" /> De couper le texte s&eacute;lectionner.</li>
+			<li><img src="UImages/save.png" /> D'enregistrer le texte r&eacute;sultat.</li>
+			<li><img src="UImages/print.png" /> D'imprimer le texte r&eacute;sultat.</li>
+			
+		</ul> 
+	<p></p>
+	<hr />
+	
+	<center><div><h3><i><a name="workspace"></a>La Zone de travail</i><a href="manuel.html#home">&nbsp;(Home)</a></h3></div></center>
+	<p>	La zone de travail est constitu&eacute;e  de deux parties :
+	</p><ul>
+		<li>La zone cl&eacute;, qui est la plus petite zone de texte. Elle est la zone o&ugrave; la cl&eacute; de chiffrement ou de d&eacute;chiffrement doit &ecirc;tre saisie.</li>
+		<li>La zone texte, qui est la plus grande zone de texte. Elle est la zone o&ugrave; le message &agrave; chiffrer ou &agrave; d&eacute;chiffrer doit &ecirc;tre saisie.</li>
+	</ul>
+	
+	La zone texte poss&eacute;de un menu contextuel, accessible &agrave; partir d'un click droit sur cette derni&eacute;re.Ce menu est ainsi constitu&eacute; :
+	<ul>
+			<li>De s&eacute;lectionner tout le texte r&eacute;sultat.</li>
+			<li><img src="UImages/delete.png" /> De supprimer tout le texte.</li>
+			<li><img src="UImages/copy.png" /> De copier le texte s&eacute;lectionner.</li>
+			<li><img src="UImages/paste.png" /> De couper le texte s&eacute;lectionner.</li>
+		</ul> 
+	<p></p>
+		
+	<center><div style="border-top:dotted medium black; padding:15px 0px;">Copyright 2010 Charles Mout&eacute; </div></center>
+</body>
+</html>

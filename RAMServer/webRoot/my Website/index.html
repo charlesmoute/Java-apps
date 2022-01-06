@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>My Website by Lemout</title>
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="css/template.css" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="css/rounded.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="css/jd.gallery.css" type="text/css" media="screen" charset="utf-8" />		
+	
+	<script src="scripts/mootools.v1.11.js" type="text/javascript"></script>
+	<script src="scripts/jd.gallery.js" type="text/javascript"></script>
+	<script src="scripts/jd.gallery.set.js" type="text/javascript"></script>
+	<script src="scripts/jquery.js" type="text/javascript"></script>
+	<script>jQuery.noConflict();</script>
+	
+	
+	<script type="text/javascript">
+		var current ="slider";		
+		jQuery(document).ready(function () {
+			jQuery("ul.menu_body li:even").addClass("alt");
+			jQuery('ul.menu_body').show();
+			jQuery('img.menu_head').click(function () {
+			jQuery('ul.menu_body').slideToggle('medium');
+			});
+			jQuery('ul.menu_body li a').mouseover(function () {
+			jQuery(this).animate({ fontSize: "14px", paddingLeft: "20px" }, 50 );
+			});
+			jQuery('ul.menu_body li a').mouseout(function () {
+			jQuery(this).animate({ fontSize: "12px", paddingLeft: "10px" }, 50 );
+			});
+		});
+		
+		function animateMessage(idContainerMessage){
+                jQuery("#"+idContainerMessage).show("slow");
+                setTimeout('jQuery("#'+idContainerMessage+'").hide();', 5000);
+        }	
+		
+		window.addEvent('domready', function() {
+				document.myGallerySet = new gallerySet($('myGallerySet'), {
+					timed: false
+				});
+		});
+
+	</script>
+
+	
+</head>
+
+<body>	
+
+	<div id="titleSite"></div>
+		
+	<div id="bodySite">			
+		<div id="subTitle"><!--<img  src="images/home.png" alt="home" title="home" />--></div>
+		<div id="containerSite">						
+			<div id="contentSite">			
+				
+				<!-- Contenu pour le click sur le home -->
+				<div id="home" style="display:none;">
+					<div class="element-box" style="color:#000000;">
+					<div class="t"><div class="t"><div class="t"></div></div></div> <div class="m">
+					<fieldset>												
+						<p> Hello,</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome in my Web world. First I am anxious to apologize little of my 
+							English coherent, therefore dice time I would be a pure French-speaking in my way to write.By the way, I am 
+							called MOUTE Charles, but called me Lemout.
+						</p>
+						<p>&nbsp;&nbsp;&nbsp;Let me tell you something, non point on me, more that it concerns me, but on life.</p>
+						<div class="readmore"></div>
+						<p class="readme" style="display:none;">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most the time we always put ourselves
+						 	the same questions, from where I come?&nbsp;Where do I go?&nbsp;Who I am?. To my humble opinion, I don't think
+							that answers to these questions will grant us a certain quietude in our lives, very worse again they will be
+							aporitiques. Indeed one often persuades itself that life will be full of projects to reach and of desires to 
+							achieve. And one thinks that one will be better when one will have that our heart wants the more to the world. 							The truth, there is not of better moment to be happy that the present moment.<br />
+							" There is in the man's heart a lot of projects, but it is the drawing of the Eternal that comes true "
+							 <b><i>Proverbs 19: 21</i></b> 	
+						</p>
+					</fieldset>
+					</div>	<div class="b"><div class="b"><div class="b"></div></div></div> </div>
+				</div>
+				
+				<!-- Contenu pour le click sur le login -->
+				<div id="login" style="display:none;">
+					<div class="element-box" style="color:#000000;">
+					<div class="t"><div class="t"><div class="t"></div></div></div> <div class="m">
+					<fieldset>						
+						<label for="User">User Name *</label>
+                        <input id="User" type="text" />
+                        <label for="Password">Password *</label>                        
+						<input id="Password" type="text" />
+                        <input id="connect" name="connect" value="Connect" onclick="animateMessage('logged')" type="submit" />
+                        <span id="logged"> Your connection is operational !</span>
+					</fieldset>	
+					</div>	<div class="b"><div class="b"><div class="b"></div></div></div> </div>
+				</div>
+				
+				<!-- Contenu pour le click sur le about -->
+				<div id="about" style="display:none;">
+					<div class="element-box" style="color:#000000;">
+					<div class="t"><div class="t"><div class="t"></div></div></div> <div class="m">
+					<fieldset>
+						<legend>&nbsp;&nbsp;About Us&nbsp;&nbsp;</legend>
+						<p> &nbsp;&nbsp; This site was created rightly for the fun and because I got bored. Amuse yourselves therefore.							
+						</p>
+					</fieldset>
+					</div>	<div class="b"><div class="b"><div class="b"></div></div></div> </div>
+				</div>
+				
+				<!-- Contenu pour le click sur le gallery -->	
+				<div id="slider" class="content" style="color:#000000;">
+					<h1 style="margin-left:43%;">Just for the fun !!</h1>
+					<div id="myGallerySet">						
+						<div id="gallery1" class="galleryElement">
+							<h2>Lemout Gallery</h2>
+							<div class="imageElement">
+								<h3>Picture 1</h3>
+								<p>Premi&eacute;re cr&eacute;tion.</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/myGallery/1.png" class="full" />
+								<img src="images/myGallery/1-mini.png" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3>Picture 2</h3>
+								<p>Deuxi&eacute;me cr&eacute;tion.</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/myGallery/2.png" class="full" />
+								<img src="images/myGallery/2-mini.png" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3>Picture 3</h3>
+								<p>Trois&eacute;me cr&eacute;tion.</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/myGallery/3.png" class="full" />
+								<img src="images/myGallery/3-mini.png" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3>Picture 4</h3>
+								<p>Quatri&eacute;me cr&eacute;tion.</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/myGallery/4.png" class="full" />
+								<img src="images/myGallery/4-mini.png" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3>Picture 5</h3>
+								<p>Cinqui&eacute;me cr&eacute;tion.</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/myGallery/5.png" class="full" />
+								<img src="images/myGallery/5-mini.png" class="thumbnail" />
+							</div>
+						</div>
+						<div id="gallery2" class="galleryElement">
+							<h2>Brugges 2006</h2>
+							<div class="imageElement">
+								<h3>Item 1 Title</h3>
+								<p>Item 1 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/brugges2006/1.jpg" class="full" />
+								<img src="images/brugges2006/1-mini.jpg" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3>Item 2 Title</h3>
+								<p>Item 2 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/brugges2006/2.jpg" class="full" />
+								<img src="images/brugges2006/2-mini.jpg" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3>Item 3 Title</h3>
+								<p>Item 3 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/brugges2006/3.jpg" class="full" />
+								<img src="images/brugges2006/3-mini.jpg" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3>Item 4 Title</h3>
+								<p>Item 4 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/brugges2006/4.jpg" class="full" />
+								<img src="images/brugges2006/4-mini.jpg" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3>Item 5 Title</h3>
+								<p>Item 5 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/brugges2006/5.jpg" class="full" />
+								<img src="images/brugges2006/5-mini.jpg" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3>Item 6 Title</h3>
+								<p>Item 6 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/brugges2006/6.jpg" class="full" />
+								<img src="images/brugges2006/6-mini.jpg" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3>Item 7 Title</h3>
+								<p>Item 7 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/brugges2006/7.jpg" class="full" />
+								<img src="images/brugges2006/7-mini.jpg" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3>Item 8 Title</h3>
+								<p>Item 8 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/brugges2006/8.jpg" class="full" />
+								<img src="images/brugges2006/8-mini.jpg" class="thumbnail" />
+							</div>
+						</div>
+						<div id="gallery3" class="galleryElement">
+							<h2>Stock Photos</h2>
+							<div class="imageElement">
+								<h3>Item 1 Title</h3>
+								<p>Item 1 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/stock/77196_6784.jpg" class="full" alt="Item 1 Title" />
+								<img src="images/stock/77196_6784_002.jpg" class="thumbnail" alt="thumbnail of Item 1 Title" />
+							</div>
+							<div class="imageElement">
+								<h3>Item 2 Title</h3>
+								<p>Item 2 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/stock/165392_5486.jpg" class="full" alt="Item 2 Title" />
+								<img src="images/stock/165392_5486_002.jpg" class="thumbnail" alt="thumbnail of Item 2 Title" />
+							</div>
+							<div class="imageElement">
+								<h3>Item 3 Title</h3>
+								<p>Item 3 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/stock/83808_7948.jpg" class="full" alt="Item 3 Title" />
+								<img src="images/stock/83808_7948_002.jpg" class="thumbnail" alt="thumbnail of Item 3 Title" />
+							</div>
+							<div class="imageElement">
+								<h3>Item 4 Title</h3>
+								<p>Item 4 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/stock/87914_9172_002.jpg" class="full" alt="Item 4 Title" />
+								<img src="images/stock/87914_9172.jpg" class="thumbnail" alt="thumbnail of Item 4 Title" />
+							</div>
+							<div class="imageElement">
+								<h3>Item 5 Title</h3>
+								<p>Item 5 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/stock/150103_4500.jpg" class="full" alt="Item 5 Title" />
+								<img src="images/stock/150103_4500_002.jpg" class="thumbnail" alt="thumbnail of Item 5 Title" />
+							</div>
+							<div class="imageElement">
+								<h3>Item 6 Title</h3>
+								<p>Item 6 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/stock/78130_1037.jpg" class="full" alt="Item 6 Title" />
+							<img src="images/stock/78130_1037_002.jpg" class="thumbnail" alt="thumbnail of Item 6 Title" />
+							</div>
+							<div class="imageElement">
+								<h3>Item 7 Title</h3>
+								<p>Item 7 Description</p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="images/stock/73831_3266_002.jpg" class="full" alt="Item 7 Title" />
+								<img src="images/stock/73831_3266.jpg" class="thumbnail" alt="thumbnail of Item 7 Title" />
+							</div>
+						</div>
+					</div>
+			</div>						
+				<!-- Contenu pour le click sur le contact -->
+				<div id="contact" style="display:none;">
+					<div class="element-box" style="color:#000000;">
+					<div class="t"><div class="t"><div class="t"></div></div></div> <div class="m">
+					<fieldset>						
+						<label for="Name">Nom *</label>
+                        <input id="Name" type="text" />
+                        <label for="Email">Adresse Email *</label>
+                        <input id="Email" type="text" />
+                        <label for="Message">Votre message *</label>
+                        <textarea id="Message" rows="3" cols="20"></textarea>
+                        <input id="sendMail" name="submit" onclick="animateMessage('messageSent')" type="submit" />
+                        <span id="messageSent"> Your message has been sent correctly !</span>					
+					</fieldset>
+					</div>	<div class="b"><div class="b"><div class="b"></div></div></div> </div>
+				</div>
+				
+			</div>
+			
+			<div id="footerSite"></div>
+		</div>
+		
+		<div id="menuSite">		
+			<img src="css/img/navigate.png" width="150" height="26" class="menu_head" />
+			<ul class="menu_body">
+			<li><a class="home">Home</a></li>
+			<li><a class="login">Login</a></li>
+			<li><a class="about">About Us</a></li>
+			<li><a class="gallery">Gallery</a></li>
+			<li><a class="contact">Contact Us</a></li>			
+			</ul>		
+		</div>					
+	</div>	
+	<div id="endSite"></div>
+	<script>
+	
+		jQuery(document).ready(function(){								
+			if(current=="slider"){
+			 jQuery("div#subTitle").html('<img  src="images/gallery.png" alt="Gallery" title="Gallery" />').fadeOut(800).fadeIn(1000);	 
+			}
+						
+			jQuery("a.home").click(function(){				
+				jQuery("div#"+current).hide();	
+				jQuery("div#subTitle").html('<img  src="images/home.png" alt="Home" title="Home"/>').fadeOut(800).fadeIn(1000);			
+				jQuery("div#home").show();
+				current = "home";
+			});
+			
+			jQuery("div.readmore").click(function(){ 
+				if ( jQuery("p.readme").is(":visible") ) {
+					jQuery("p.readme").slideUp("slow");
+				}else{
+					jQuery("p.readme").slideDown("slow");
+				} 
+			});
+			
+			jQuery("a.login").click(function(){
+				jQuery("div#"+current).hide();				
+				jQuery("div#subTitle").html('<img  src="images/login.png" alt="Login" title="Login" />').fadeOut(800).fadeIn(1000);
+				jQuery("div#login").show();
+				current = "login";				
+			});
+			
+			jQuery("a.about").click(function(){
+				jQuery("div#"+current).hide();				
+				jQuery("div#subTitle").html('<img  src="images/about.png" alt="About us" title="About us" />').fadeOut(800).fadeIn(1000);
+				jQuery("div#about").show();
+				current = "about";				
+			});
+			
+			jQuery("a.gallery").click(function(){
+				jQuery("div#"+current).hide();				
+				jQuery("div#subTitle").html('<img  src="images/gallery.png" alt="Gallery" title="Gallery" />').fadeOut(800).fadeIn(1000);			
+				jQuery("div#slider").show();				
+				current = "slider";					
+			});
+			
+			jQuery("a.contact").click(function(){
+				jQuery("div#"+current).hide();
+				jQuery("div#subTitle").html('<img src="images/contact.png" alt="Contact us" title="Contact us" />').fadeOut(800).fadeIn(1000);
+				jQuery("div#contact").show();
+				current = "contact";				
+			});
+		});
+	</script>
+</body>
+</html>

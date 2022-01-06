@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Manuel de RAMClient</title>
+<style>
+ a{
+ 	text-decoration:none;
+ }
+ul.item  li {
+ 	padding: 15px 0;
+ }
+</style>
+</head>
+
+<body style="font-family:'Courier New', Courier, monospace; size:18px;">
+	
+	<center><a name="home"></a><div style="border-bottom:dotted medium black;"><img src="UImages/logo.png" style="width:45px; height:55px;"/><h2>RAMClient 1.0</h2></div></center>
+	<br/>
+	<p> Certains chargement peuvent prendre du temps, surtout quand les fichiers sont importants,mais ne vous inqui&eacute;tez pas, cela finira par charger.Si un fichier s'affiche mal, vous pouvez am&eacute;liorer son rendu en le consultant en externe, lisez la suite pour en savoir plus.<br/><br/>
+		L'interface  de RAMClient est constitu&eacute; :
+	  	</p><ul>
+			<li><a href="manuel.html#menu">D'un Menu principalement et de deux menus surgissants,</a></li>
+			<li><a href="manuel.html#onglets">et de différents Onglets.</a></li>
+			
+		</ul>
+	<hr /><br/>
+	<b style="padding-bottom:5px;"><a name="menu"></a>Les menus</b> <a href="manuel.html#home">( Home )</a> 
+	<p>
+		Il existe trois menus dans RAMClient : 
+		</p><ul>
+			<li><a  href="manuel.html#main"> Le menu principal</a></li>
+			<li><a  href="manuel.html#onglet"> Le menu des onglets</a></li>
+			<li><a  href="manuel.html#content"> Le menu des contenus</a></li>
+		</ul>
+		<p>
+		<i><a name="main"></a><span style="padding-bottom:5px; border-bottom:black medium dotted;">Le menu Principal</span></i> -> Il est constitu&eacute; des menus : 
+		</p><ul class="item">
+			<li>
+				<b>Fichier</b> contenant les sous-menus : nouvel onglet (pour créer un nouvel onglet),imprimer qui lance l'impression  de la page se trouvant sur l'onglet courant, le sous-menu exit qui permet de quitter l'application.
+			</li>
+			<li>
+				<b>Edition</b> qui dans l'ordre propose un sous-menu Supprimer historique qui efface tous les historiques des onglets, un sous-menu Nettoyer cache qui supprime les fichiers mis en cache, les sous-menus upload et delete qui permettent d'envoyer respectivement les requ&ecirc;tes de <b>PUT</b> et de <b>DELETE</b> au serveur.
+				<br/><br/>
+				<b>NB : </b> Au niveau des interfaces PUT et DELETE, vous devez taper toute l'URL jusqu'au nom du fichier devant &ecirc;tre ajout&eacute; ou supprim&eacute;.De plus il est &agrave; annoter que la m&eacute;thode PUT ne cr&eacute;e pas les dossiers, donc sur l'URL vous ne
+				devez pas mettre de chemin de dossiers inexistants et ne devez mettre que des chemins contenant des dossiers existants et conduisant vers un fichier &agrave; cr&eacute;er.
+				
+				
+			</li>			
+			<li>
+				<b>Aide</b> qui contient un sous-menu <b>Manuel</b> permettant d'obtenir ce fichier d'aide et le sous-menu <b>A propos</b> donnant un condens&eacute; d'information sur RAMClient 1.0.
+			</li>			
+		</ul>
+	<p></p>
+	
+	<p>
+	 <i><a name="onglet"></a><span style="padding-bottom:5px; border-bottom:black medium dotted;">Le menu des Onglets</span> </i> -> Il a pour but de gérer les onglets du navigateur.En effet on distingue les sous-menus suivants : 
+	 </p><ul>
+	 	<li>Un sous-menu Fermer qui ferme l'onglet courant</li>
+		<li>Un sous-menu Fermer tout sauf... qui ferme tous les autres onglets &agrave; l'exception de l'onglet courant.</li>
+		<li> Un sous-menu Fermer tout qui ferme tous les onglets.</li>
+	 </ul>	 	 	
+	<p></p>
+	
+	<p>
+	 <i><a name="content"></a><span style="padding-bottom:5px; border-bottom:black medium dotted;">Le menu des contenus</span> </i> -> Ceci est le menu ayant trait au contenu des pages. Il est constitu&eacute; des sous-menus suivants :
+	 </p><ul class="item">
+	 	<li>Am&eacute;liorer la visibilit&eacute; qui permet d'afficher le contenu du fichier dans votre navigateur pr&eacute;f&eacute;r&eacute;. Ce sous menu est utilis&eacute; pour vous permettre de visualiser, les fichiers incompr&eacute;hensibles pas RAMClient.</li>
+		<li>Nettoyer l'historique qui nettoie l'historique de l'onglet courant.</li>
+		<li>Imprimer qui lance l'impression de la page courante.</li>
+		<li>Sauvegarder sous.. ce sous-menu a pour vocation de vous permettre de stocker les contenus des pages du serveur sur votre		machine. Ce sous-menu est particuli&eacute;rement utile pour les fichiers audios  qui ne sont pas lisibles par notre navigateur et qui
+			peuvent ne pas se lire sur votre navigateur courant, alors cette option vous permet de les stocker en local et de les jouer sur votre lecteur favori.
+		</li>
+	 </ul>
+	<p></p>
+	
+	<p></p>
+	<hr /><br />
+	<b style="padding-bottom:5px;"><a name="onglets"></a>Les Onglets</b> <a href="manuel.html#home">( Home )</a> 
+	<p>
+		Les onglets vous permettent de lancer plusieurs requ&ecirc;tes au serveur. Ceci est pratique vu que tous les liens d'un onglet s'ouvre toujours dans le m&ecirc;me onglet, vous pourriez copiez le lien souhait&eacute; dans un nouvel onglet ouvert.Chacun d'eux dispose
+d'une barre d'addresse, des boutons de navigation,permettant de parcourir l'historique des pages visit&eacute;es et surtout de deux boutons permettant de d&eacute;finir la m&eacute;thode de traitement des pages soit en <b>GET</b>, soit en <b>HEAD</b>. Quant aux m&eacute;thodes <b>PUT</b> et <b>DELETE</b> les sous-menus upload et delete du menu d'&eacute;dition permettent de les ex&eacute;cuter respectivement. Le bouton refresh de rafraichir la fen&ecirc;tre.		
+	</p>
+	<br />
+	<center><div style="border-top:dotted medium black; padding:15px 0px;">Copyright 2010 Charles & Marsien </div></center>
+</body>
+</html>

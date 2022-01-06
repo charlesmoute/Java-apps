@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/* my Website template */
+
+body {
+	/*background: url(img/background.png) #072456 repeat-x;*/
+	background: Black;
+	color: White;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto ;
+	padding: 0 ;
+	font-size: 14px;	
+}
+
+img {
+	border: 0px;
+}
+
+.readmore {
+	background: url(img/readme.png) no-repeat ;
+	width: 115px;
+	height: 26px;
+	margin: 0;
+	padding: 0 ;
+}
+
+.readmore:hover {
+	background: url(img/readmeHover.png) no-repeat;	
+	width: 115px;
+	height: 26px;
+	margin: 0;
+	padding: 0 ;
+}
+
+/*	 Header CSS	*/
+#titleSite{
+	background: no-repeat url(img/title.png);	
+	height: 85px;	
+	margin-left: 35%;
+	margin-top: 25px;
+}
+
+/*  Container StylSheet */
+#bodySite {
+	background-color: Black;
+	margin: 30px 30px ;
+	padding: 10px 25px;		
+	border: solid 0px Red;
+	overflow:auto;
+}
+
+#subTitle {
+	background-color:#000000;
+	color:#FFFFFF;
+	margin-left:45%;
+	margin-top:15px;
+	margin-bottom:15px;	
+}
+
+/* menu CSS*/
+
+ul, li{margin:0; padding:0; list-style:none;}
+
+.menu_head{border:1px solid #998675;}
+
+.menu_body {
+	display:none; 
+	width:150px;
+	border-right:1px solid #998675;
+	border-bottom:1px solid #998675;
+	border-left:1px solid #998675;
+}
+.menu_body li{background:#493e3b;}
+.menu_body li.alt{background:#362f2d;}
+.menu_body li a{color:#FFFFFF; text-decoration:none; padding:10px; display:block;}
+.menu_body li a:hover{padding:15px 10px; font-weight:bold;}
+
+#containerSite {	
+	padding: 10px;
+	width: 83%;
+	background: White;
+	float: right;
+	border: solid Red 2px;	
+}
+
+#contentSite {	
+	background: White;
+	padding: 10px;
+}
+
+
+#login label {
+  display:block;
+  color: Red;  
+}
+
+#login input[type=text]{
+  	display:block;
+   border:solid 1px #4d3a24;
+   width:98%;
+   margin-bottom:10px;
+   height:24px;
+}  
+
+
+#login input[type=submit]
+{
+	background-color: #4d3a24;
+  	border:solid 1px #23150c;
+  	color:#fecd28;
+  	padding:5px;
+}
+
+#logged{
+  	color:Red;
+	padding:10px;
+   display:none;
+}
+
+
+#contact label {
+  display:block;
+  color: Red;  
+}
+
+#contact input[type=text]{
+  	display:block;
+   border:solid 1px #4d3a24;
+   width:98%;
+   margin-bottom:10px;
+   height:24px;
+}  
+
+#contact textarea
+{
+  	display:block;
+  	border:solid 1px #4d3a24;
+  	width:100%;
+  	margin-bottom:10px;
+}  
+
+#contact input[type=submit]
+{
+	background-color: #4d3a24;
+  	border:solid 1px #23150c;
+  	color:#fecd28;
+  	padding:5px;
+}
+
+#messageSent{
+  	color:Red;
+	padding:10px;
+   display:none;
+}
+
+#myGallerySet{
+	margin-left: 30%;
+}
+#menuSite {
+	float: left;	
+}
+
+/*  footer CSS */
+#footerSite {	
+	background: url(img/footer.png) no-repeat;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-left: 35%;
+	height: 25px;
+}
+
+#endSite {	
+	background: url(img/footer.png) no-repeat;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-left: 35%;
+	height: 25px;
+}

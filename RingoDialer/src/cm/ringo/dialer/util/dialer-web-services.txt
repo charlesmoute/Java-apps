@@ -1,0 +1,73 @@
+
+Format général des résultats des appels :
+
+key1=value1; key2=value2; key3=value3; 
+
+
+Statut du compte de l'abonné:
+==============================
+
+URL: 
+	https://publicws.ringo.cm:8443/dialer/status
+
+paramètres HTTP en POST: 
+   login: login du client
+   password: mot de passe du client
+   lang: language du Dialeur (si ce paramètre n'est pas donné, le français est utilisé)
+
+resultat (format CSV):
+	creditRemaining: le crédit restant, en francs CFA
+	discount: 1 si le client est en illimité (forfait, home/pro), et 0 si le client est en minute ;
+	timeRemainingInMinutes: durée de connection restante ;
+	ringo2ringoBonusSMS: bonus sms vers les numéros ringo ;
+	ringo2gsmBonusSMS: bonus sms vers les autres numéros ;
+
+	
+Traitements préliminaires à une session PPPoE:
+==============================================
+
+URL:
+	https://publicws.ringo.cm:8443/dialer/connect
+
+paramètres HTTP en POST: 
+   login: login du client ;
+   password: mot de passe du client ;
+   lang: language du Dialeur (si ce paramètre n'est pas donné, le français est utilisé)
+
+resultat:
+	creditRemaining: le crédit restant, en francs CFA
+	discount: 1 si le client est en illimité (forfait, home/pro), et 0 si le client est en minute ;
+	timeRemainingInMinutes: durée de connection restante ;
+	ringo2ringoBonusSMS: bonus sms vers les numéros ringo ;
+	ringo2gsmBonusSMS: bonus sms vers les autres numéros ;	
+	errorCode: code d'erreur empêchant le client de se connecter ;
+	errorText: le texte de l'erreur, à afficher au client
+
+effets de l'appel de cette métode:
+    le client est déconnecté, s'il est actuellement connecté
+
+
+Recharges de crédit :
+==============================================
+
+URL:
+	https://publicws.ringo.cm:8443/dialer/refill
+	
+aramètres HTTP en POST: 
+   login: login du client ;
+   password: mot de passe du client ;
+   code: le code de recharge de la carte
+   lang: language du Dialeur (si ce paramètre n'est pas donné, le français est utilisé)
+   
+   
+   
+Transfert de crédit entre deux comptes:
+==============================================
+URL:
+	https://publicws.ringo.cm:8443/dialer/transfer
+	
+
+Mise à jour du Dialeur :
+==============================================
+Fichier de Version en Téléchargement:	https://publicws.ringo.cm:8443/dialer/update/version.dat
+Jar de la dernière version:	https://publicws.ringo.cm:8443/dialer/update/dialeur.jar

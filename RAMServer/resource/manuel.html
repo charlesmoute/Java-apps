@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Manuel de RAMServer</title>
+<style>
+ a{
+ 	text-decoration:none;
+ }
+</style>
+</head>
+
+<body style="font-family:'Courier New', Courier, monospace; size:18px;">
+	
+	<center><a name="home"></a><div style="border-bottom:dotted medium black;"><img src="UImages/logo.png" style="width:45px; height:55px;"/><h2>RAMServer 1.0</h2></div></center>
+	<br/>
+	<p>
+	  	L'interface  de RAMServer est constitu&eacute; de quatres grandes parties :
+	  	</p><ul>
+			<li><a href="manuel.html#menu">Le Menu.</a></li>
+			<li><a href="manuel.html#toolbar">Une bo&icirc;te &agrave; outils.</a></li>
+			<li><a href="manuel.html#output">Une sortie.</a></li>
+			<li><a href="manuel.html#statusbar">Une barre de tâche.</a></li>
+		</ul>
+		et de trois grand modes :
+		<ul>
+			<li>Le mode stop, o&ugrave; le serveur est dans l'&eacute;tat arr&ecirc;t.</li>
+			<li>Le mode start en multithread; o&ugrave; le serveur est lanc&eacute; et g&eacute;re ses connexions clientes en multithreading</li>
+			<li>Le mode start en canaux; o&ugrave; le serveur est lanc&eacute; et g&eacute;re ses connexions clientes avec des canaux.</li>
+		</ul>
+	<p></p>
+	<hr />
+	<center><div><h3><i><a name="menu"></a>Le menu</i></h3></div></center>
+	<p>
+		Trois menu sont a distinguer :
+		</p><ul>
+			<li><a href="manuel.html#file">File : regroupant les actions standards de l'application.</a></li>
+			<li><a href="manuel.html#edition">Edition : regroupant les fonctionnalités supplémentaires de l'application.</a></li>
+			<li><a href="manuel.html#help">Help : permettant d'avoir acc&eacute;s a un &agrave; propos et &agrave; cette  aide.</a></li>
+		</ul>		
+	<p></p>
+	<br />
+	<p>
+		<a name="file"></a></p><h4><i>File</i></h4><br />
+		<div><a href="manuel.html#home">Home</a></div><br />
+		Ce menu est constitu&eacute; des sous-menus suivant :
+		<ul>
+			<li>Start : d&eacute;marre le serveur.</li>
+			<li>Stop : Arr&ecirc;te le serveur</li>
+			<li>Print : imprime la sortie du serveur</li>
+			<li>Exit : Quitte l'application en arr&ecirc;tant le serveur.</li>
+		</ul>
+	<p></p>
+	
+	<br />
+	<p>
+		<a name="edition"></a></p><h4><i>Edition</i></h4><br />
+		<div><a href="manuel.html#home">Home</a></div><br />
+		Ce menu est constitu&eacute; des sous-menus suivant :
+		<ul>
+			<li>Clean Log Folder : Nettoie le dossier des fichiers log.</li>
+			<li>Clean Cache Folder : Nettoie le cache du serveur.</li>
+			<li>Log Files Listing : Donne, au travers d'une fen&ecirc;tre ind&eacute;pendante,le contenu du dossier des fichiers log.</li>
+			<li>Preference : Donne une fen&ecirc;tre permettant de param&ecirc;trer l'application.</li>
+		</ul>
+		<b>NB</b>
+		<ul>
+			<li>Un nom de fichiers en cache est de la forme name 22012010100215 ce qui correspond &agrave; la periode que le fichier de nom name a &eacute;t&eacute; mis en cache. Dans notre exemple le fichier name a &eacute;t&eacute; mis en cahe le 22/01/2010 &agrave; 10:02:15</li>
+			<li>Parmi les pr&eacute;f&eacute;rences on a le choix du mode de gestion des connexions, le num&eacute;ro de port du serveur,
+			le nombre de connexions simultan&eacute;n&eacute;es, z&eacute;ro pour une infinit&eacute;, les chemins des dossiers racine du serveur et des fichiers Log. Il faut arr&ecirc;ter le serveur et le relancer pour que les pr&eacute;f&eacute;rences soient prises en compte.</li>
+		</ul>
+	<p></p>
+	
+	<br />
+	<p>
+		<a name="help"></a></p><h4><i>Help</i></h4><br />
+		<div><a href="manuel.html#home">Home</a></div><br />
+		Ce menu est constitu&eacute; des sous-menus suivant :
+		<ul>
+			<li>Manuel : Donne acc&eacute;s &agrave; cette aide.</li>
+			<li>About: Donne une fen&ecirc;tre d'&agrave; propos.</li>
+		</ul>
+	<p></p>
+	
+	<hr />
+	<center><div><h3><i><a name="toolbar"></a>La Toolbar</i></h3></div></center>
+	<div><a href="manuel.html#home">Home</a></div>
+	<p>
+		La toolbar est constitu&eacute;e de six ic&ocirc;nes, chacune d'elle &eacute;tant des raccourcies de sous-menus. Les significations de ces ic&ocirc;nes sont les suivantes :
+		</p><ul>
+			<li><img src="UImages/play.png" /> (D&eacute;marre le Serveur; n'est disponible que lorsque le serveur est arr&ecirc;t&eacute;)</li>
+			<li><img src="UImages/stop.png" /> (Arr&ecirc;te le Serveur; n'est disponible que quand le serveur est en cours d'ex&eacute;cution)</li>
+			<li><img src="UImages/print.png" />&nbsp;(Imprime le contenu de la sortie, et ce qu'importe le mode du serveur)</li>
+			<li><img src="UImages/help.png" /> (Donne acc&eacute;s &agrave; cette page d'aide)</li>
+			<li><img  src="UImages/view.png" /> (Affiche une fenêtre permettantde visualiser les fichiers de log)</li>
+			<li><img src="UImages/exit.png" /> (Ferme l'application)</li>
+		</ul>
+	<p></p>
+	<hr />
+	<center><div><h3><i><a name="output"></a>La Sortie</i></h3></div></center>
+	<div><a href="manuel.html#home">Home</a></div>
+	<p>
+		La sortie est l'écran noire, du milieu. Elle affiche les requ&ecirc;tes que le serveur re&ccedil;oit ainsi que les r&eacute;ponses de ce dernier &agrave; ses clients. Pour Voire les autres fichiers de log, il existe un bouton view, repr&eacute;sent&eacute; par l'image <img src="UImages/view.png" />, qui permet au travers d'une fen&ecirc;tre de consulter les autres log. Sur la partie edition de cette fen&ecirc;tre a l'aide du click droit on peut rafra&icirc;chir l'&eacute;cran d'&eacute;dition.
+	</p>
+
+	<hr />
+	<center><div><h3><i><a name="statusbar"></a>La barre des t&acirc;ches.</i></h3></div></center>
+	<span><a href="manuel.html#home">Home</a></span>
+	<p>
+		Elle sert principalement, &agrave; afficher trois messages.
+		</p><ul>
+			<li>Un message signalant que le serveur est arr&ecirc;t&eacute;.</li>
+			<li>Un message signalant que le serveur g&eacute;re ses connexions clientes en multithreading.</li>
+			<li>Un message signalant que le serveur g&eacute;re ses connexions clientes au travers des canaux.</li>
+		</ul>
+		Les deux derniers messages, contrairement au premier, sont affichés quand le serveur est lanc&eacute; et ceci pour
+		signifier,  en permanence, &agrave; l'utilisateur le mode de gestion des connexions.
+	<p></p>
+	
+	<br />
+	<center><div style="border-top:dotted medium black; padding:15px 0px;">Copyright 2010 Charles & Marsien </div></center>
+</body>
+</html>

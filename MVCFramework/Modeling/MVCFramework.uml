@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_QUBpcKn7Ed-pw4YOUJ2PFg" name="MVCFramework">
+  <elementImport xmi:id="_QXRKsKn7Ed-pw4YOUJ2PFg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_QXRKsan7Ed-pw4YOUJ2PFg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_QXRKsqn7Ed-pw4YOUJ2PFg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_QXRKs6n7Ed-pw4YOUJ2PFg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ZaOY8Kn7Ed-pw4YOUJ2PFg" name="cm">
+    <packagedElement xmi:type="uml:Package" xmi:id="_gbYHgKn7Ed-pw4YOUJ2PFg" name="entreprise">
+      <packagedElement xmi:type="uml:Package" xmi:id="_oKYakKn7Ed-pw4YOUJ2PFg" name="software">
+        <packagedElement xmi:type="uml:Package" xmi:id="_v7e_YKn7Ed-pw4YOUJ2PFg" name="component">
+          <packagedElement xmi:type="uml:Package" xmi:id="_ed5RsKn8Ed-pw4YOUJ2PFg" name="controller" clientDependency="_A7saQKoLEd-pw4YOUJ2PFg">
+            <packagedElement xmi:type="uml:Dependency" xmi:id="_A7saQKoLEd-pw4YOUJ2PFg" name="Contrôle" supplier="_hUNXgKn8Ed-pw4YOUJ2PFg" client="_ed5RsKn8Ed-pw4YOUJ2PFg"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_p5fNcKoLEd-pw4YOUJ2PFg" name="Controller" isAbstract="true"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_sSS34KoLEd-pw4YOUJ2PFg" name="SuperController" isAbstract="true">
+              <generalization xmi:id="_Ltt88KoMEd-pw4YOUJ2PFg" general="_p5fNcKoLEd-pw4YOUJ2PFg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_cqFXcKoMEd-pw4YOUJ2PFg" name="Est Composé de" memberEnd="_cqLeEKoMEd-pw4YOUJ2PFg _cqLeE6oMEd-pw4YOUJ2PFg">
+              <ownedEnd xmi:id="_cqLeEKoMEd-pw4YOUJ2PFg" name="" type="_sSS34KoLEd-pw4YOUJ2PFg" association="_cqFXcKoMEd-pw4YOUJ2PFg">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cqLeEqoMEd-pw4YOUJ2PFg" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cqLeEaoMEd-pw4YOUJ2PFg" value="1"/>
+              </ownedEnd>
+              <ownedEnd xmi:id="_cqLeE6oMEd-pw4YOUJ2PFg" name="" type="_p5fNcKoLEd-pw4YOUJ2PFg" aggregation="shared" association="_cqFXcKoMEd-pw4YOUJ2PFg">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cqLeFaoMEd-pw4YOUJ2PFg" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cqLeFKoMEd-pw4YOUJ2PFg" value="1"/>
+              </ownedEnd>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_hUNXgKn8Ed-pw4YOUJ2PFg" name="model">
+            <packagedElement xmi:type="uml:Package" xmi:id="_xDZ0QKn8Ed-pw4YOUJ2PFg" name="base">
+              <packagedElement xmi:type="uml:Class" xmi:id="_Np7kQKoHEd-pw4YOUJ2PFg" name="Model" isAbstract="true"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_O-pUcKoHEd-pw4YOUJ2PFg" name="SuperModel" isAbstract="true">
+                <generalization xmi:id="_SNOJQKoHEd-pw4YOUJ2PFg" general="_Np7kQKoHEd-pw4YOUJ2PFg"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_pueNEKoHEd-pw4YOUJ2PFg" name="Est Composé de" memberEnd="_pueNEaoHEd-pw4YOUJ2PFg _pueNFKoHEd-pw4YOUJ2PFg">
+                <ownedEnd xmi:id="_pueNEaoHEd-pw4YOUJ2PFg" name="" type="_O-pUcKoHEd-pw4YOUJ2PFg" association="_pueNEKoHEd-pw4YOUJ2PFg">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pueNE6oHEd-pw4YOUJ2PFg" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pueNEqoHEd-pw4YOUJ2PFg" value="1"/>
+                </ownedEnd>
+                <ownedEnd xmi:id="_pueNFKoHEd-pw4YOUJ2PFg" name="" type="_Np7kQKoHEd-pw4YOUJ2PFg" aggregation="shared" association="_pueNEKoHEd-pw4YOUJ2PFg">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pueNFqoHEd-pw4YOUJ2PFg" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pueNFaoHEd-pw4YOUJ2PFg"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_cABqoKoIEd-pw4YOUJ2PFg" value=""/>
+                </ownedEnd>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_zk6HsKn8Ed-pw4YOUJ2PFg" name="event" clientDependency="_pZYb8KoJEd-pw4YOUJ2PFg">
+              <packagedElement xmi:type="uml:Class" xmi:id="_DZcXcKn9Ed-pw4YOUJ2PFg" name="Event">
+                <ownedOperation xmi:id="_ImXvUKn9Ed-pw4YOUJ2PFg" name="Event">
+                  <ownedParameter xmi:id="_OlKB8Kn9Ed-pw4YOUJ2PFg" direction="return"/>
+                  <ownedParameter xmi:id="_OlKB8an9Ed-pw4YOUJ2PFg" name="Model source"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_dl75gKn9Ed-pw4YOUJ2PFg" name="AnyChangedEvent">
+                <generalization xmi:id="_ItjqgKn_Ed-pw4YOUJ2PFg" general="_DZcXcKn9Ed-pw4YOUJ2PFg"/>
+                <ownedAttribute xmi:id="_iGproKn9Ed-pw4YOUJ2PFg" name="infos" visibility="private" aggregation="composite"/>
+                <ownedOperation xmi:id="_1s0Z8Kn9Ed-pw4YOUJ2PFg" name="AnyChangedEvent">
+                  <ownedParameter xmi:id="_BsGPYKn-Ed-pw4YOUJ2PFg" direction="return"/>
+                  <ownedParameter xmi:id="_BsGPYan-Ed-pw4YOUJ2PFg" name="Model source"/>
+                  <ownedParameter xmi:id="_BsGPYqn-Ed-pw4YOUJ2PFg" name="Object newInfo"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_EK07oKn-Ed-pw4YOUJ2PFg" name="getInformationOnChange">
+                  <ownedParameter xmi:id="_PmBMkKn-Ed-pw4YOUJ2PFg" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Dependency" xmi:id="_pZYb8KoJEd-pw4YOUJ2PFg" name="Est Emis" supplier="_xDZ0QKn8Ed-pw4YOUJ2PFg" client="_zk6HsKn8Ed-pw4YOUJ2PFg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_3bf-wKn8Ed-pw4YOUJ2PFg" name="listener" clientDependency="_C8kKAKoEEd-pw4YOUJ2PFg">
+              <packagedElement xmi:type="uml:Class" xmi:id="_h6QHAKoAEd-pw4YOUJ2PFg" name="Listener"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_p5mGsKoBEd-pw4YOUJ2PFg" name="AnyListener">
+                <generalization xmi:id="_PLZwUKoCEd-pw4YOUJ2PFg" general="_h6QHAKoAEd-pw4YOUJ2PFg"/>
+                <ownedOperation xmi:id="_trzNAKoBEd-pw4YOUJ2PFg" name="anyChanged">
+                  <ownedParameter xmi:id="_4Qc3gKoBEd-pw4YOUJ2PFg" direction="return"/>
+                  <ownedParameter xmi:id="_4Qc3gaoBEd-pw4YOUJ2PFg" name="AnyChangedEvent evt"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Dependency" xmi:id="_C8kKAKoEEd-pw4YOUJ2PFg" name="Ecoute" supplier="_zk6HsKn8Ed-pw4YOUJ2PFg" client="_3bf-wKn8Ed-pw4YOUJ2PFg"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_jtyeAKn8Ed-pw4YOUJ2PFg" name="view" clientDependency="_PiahIKoNEd-pw4YOUJ2PFg">
+            <packagedElement xmi:type="uml:Dependency" xmi:id="_PiahIKoNEd-pw4YOUJ2PFg" name="Est contrôlée" supplier="_ed5RsKn8Ed-pw4YOUJ2PFg" client="_jtyeAKn8Ed-pw4YOUJ2PFg"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_0awnEKn7Ed-pw4YOUJ2PFg" name="interfaces"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_-5TCgKn7Ed-pw4YOUJ2PFg" name="helper"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_DC_bwKn8Ed-pw4YOUJ2PFg" name="util"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_JI8GUKn8Ed-pw4YOUJ2PFg" name="exception"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Package>
